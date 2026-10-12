@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>MonitorReader</RootNamespace>
+    <AssemblyName>MonitorReader</AssemblyName>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NModbus4.NetCore" Version="3.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="9.0.4" />
+    <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
+  </ItemGroup>
+
+  <!-- 声明窗体文件，使 VS 解决方案资源管理器出现「查看设计器」菜单 -->
+  <ItemGroup>
+    <Compile Update="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmChildBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmDataMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTrends.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+# 编译产物
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
